@@ -4,7 +4,8 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 270px;
+  grid-auto-flow: column;
 }
 
 .sidebar {
@@ -20,6 +21,25 @@ body {
 .sidebar__nav-section {
   display: grid;
   gap: 8px;
+}
+
+.sidebar__dash-title,
+.sidebar__nav-link {
+  display: grid;
+  grid-template-columns: 60px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.sidebar__nav-section img {
+  width: 25px;
+  margin-left: 11px;
+  filter: invert(90%);
+}
+
+.sidebar__dash-title img {
+  width: 50px;
+  filter: invert(90%);
 }
 
 .header {
