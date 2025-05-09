@@ -5,7 +5,10 @@ body {
 
 .sidebar {
   background-color: blue;
+  color: white;
   grid-row: 1 / 3;
+  display: grid;
+  gap: 50px;
 }
 
 .main-content {
