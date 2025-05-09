@@ -39,4 +39,10 @@ body {
 
 .main-content {
   background-color: lightgray;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.main-content__projects {
+  grid-row: 1 / 3;
 }
