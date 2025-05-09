@@ -21,6 +21,22 @@ body {
   gap: 8px;
 }
 
+.header {
+  padding: 16px 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__profile {
+  justify-self: end;
+}
+
+.header__buttons {
+  justify-self: end;
+}
+
 .main-content {
   background-color: lightgray;
 }
