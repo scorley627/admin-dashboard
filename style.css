@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("./fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./fonts/Roboto-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("./fonts/Roboto-Italic.woff2") format("woff2"),
+    url("./fonts/Roboto-Italic.woff") format("woff");
+  font-style: italic;
+}
+
 * {
   margin: 0;
 }
@@ -6,6 +22,7 @@ body {
   display: grid;
   grid-template-columns: 270px;
   grid-auto-flow: column;
+  font-family: "Roboto";
 }
 
 .sidebar {
@@ -30,15 +47,24 @@ body {
   align-items: center;
   color: white;
   text-decoration: none;
+  font-weight: bolder;
+}
+
+.sidebar__dash-title {
+  font-size: 1.5em;
+}
+
+.sidebar__nav-link {
+  font-size: 1.2em;
 }
 
 .sidebar__dash-title img {
-  width: 50px;
+  width: 45px;
   filter: invert(100%);
 }
 
 .sidebar__nav-link img {
-  width: 25px;
+  width: 22px;
   margin-left: 11px;
   filter: invert(100%);
 }
