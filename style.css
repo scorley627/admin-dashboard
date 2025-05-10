@@ -70,7 +70,7 @@ body {
 }
 
 .header {
-  padding: 16px 32px;
+  padding: 16px 64px 16px 32px;
   display: grid;
   grid-template-columns: clamp(300px, 60%, 800px) 1fr;
   gap: 16px;
@@ -101,6 +101,19 @@ body {
 .header__profile {
   justify-self: end;
   text-wrap: nowrap;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 24px;
+  font-weight: bolder;
+}
+
+.header__profile img:first-child {
+  width: 25px;
+}
+
+.header__profile img:last-child {
+  width: 45px;
 }
 
 .header__buttons {
