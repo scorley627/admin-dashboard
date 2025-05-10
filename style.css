@@ -72,13 +72,35 @@ body {
 .header {
   padding: 16px 32px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: clamp(300px, 60%, 800px) 1fr;
   gap: 16px;
   align-items: center;
 }
 
+.header__searchbar {
+  display: grid;
+  grid-template-columns: 32px;
+  grid-auto-flow: column;
+  gap: 8px;
+}
+
+.header__searchbar button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header__searchbar input {
+  background-color: lightgray;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-style: inherit;
+}
+
 .header__profile {
   justify-self: end;
+  text-wrap: nowrap;
 }
 
 .header__buttons {
