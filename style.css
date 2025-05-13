@@ -186,13 +186,28 @@ body {
 
 .main-content__project-card {
   background-color: white;
-  padding: 32px 48px 32px 24px;
+  padding: 32px 24px;
   border-left: 8px solid orange;
   border-radius: 10px;
+  display: grid;
+  grid-template-rows: min-content min-content auto;
 }
 
 .main-content__project-card {
   font-size: 0.9em;
+}
+
+.main-content__project-card-icons {
+  margin: 16px 16px 0px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-content: end;
+  gap: 24px;
+}
+
+.main-content__project-card-icons img {
+  width: 25px;
 }
 
 .main-content__announcements-card,
