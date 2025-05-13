@@ -21,6 +21,7 @@
 body {
   display: grid;
   grid-template-columns: 270px;
+  grid-template-rows: min-content;
   grid-auto-flow: column;
   font-family: "Roboto";
   line-height: 1.3;
