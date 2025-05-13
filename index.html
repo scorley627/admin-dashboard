@@ -75,64 +75,64 @@
     <div class="main-content__projects">
       <h1>Your Projects</h1>
       <div class="main-content__project-grid">
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Super Cool Project</h1>
           <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
             erat, id facilisis felis accumsan nec.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
           </div>
         </div>
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Less Cool Project</h1>
           <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
             sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis
             sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
           </div>
         </div>
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Impossible App</h1>
           <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
             placerat velit sagittis id.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
           </div>
         </div>
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Easy Peasy App</h1>
           <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna
             eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo,
             ac bibendum magna tincidunt.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
           </div>
         </div>
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Ad Blocker</h1>
           <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
             pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
           </div>
         </div>
-        <div class="main-content__project-card">
+        <div class="project-card">
           <h1>Money Maker</h1>
           <p>Praesent convallis, libero quis congue elementum, nunc ante
             faucibus sapien, ac scelerisque tortor purus sit amet ex.
             Pellentesque mollis nec sem vel aliquam.</p>
-          <div class="main-content__project-card-icons">
+          <div class="project-card__icons">
             <img src="./images/star.svg" alt="star icon">
             <img src="./images/eye.svg" alt="watch icon">
             <img src="./images/fork.svg" alt="fork icon">
@@ -142,36 +142,44 @@
     </div>
     <div class="main-content__announcements">
       <h1>Announcements</h1>
-      <div class="main-content__announcements-card">
-        <h1>Site Maintenance</h1>
-        <p>Vestibulum condimentum tellus lacus, in accumsan elit maxiumus ac.
-          Donec hendrerit sodales congue...</p>
-        <h1>Community Share Day</h1>
-        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
-          dictum accumsan porttitor...</p>
-        <h1>Updated Privacy Policy</h1>
-        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante
-          auctor. Cras fringilla sagittis sem in mattis...</p>
+      <div class="announcements-card">
+        <div class="announcements-card__entry">
+          <h1>Site Maintenance</h1>
+          <p>Vestibulum condimentum tellus lacus, in accumsan elit maxiumus ac.
+            Donec hendrerit sodales congue...</p>
+        </div>
+        <hr>
+        <div class="announcements-card__entry">
+          <h1>Community Share Day</h1>
+          <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+            dictum accumsan porttitor...</p>
+        </div>
+        <hr>
+        <div class="announcements-card__entry">
+          <h1>Updated Privacy Policy</h1>
+          <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum
+            ante auctor. Cras fringilla sagittis sem in mattis...</p>
+        </div>
       </div>
     </div>
     <div class="main-content__trending">
       <h1>Trending</h1>
-      <div class="main-content__trending-card">
-        <div class="main-content__trending-item">
-          <div class="main-content__trending-user">@tegan</div>
-          <div class="main-content__trending-project">World Peace Builder</div>
+      <div class="trending-card">
+        <div>
+          <div>@tegan</div>
+          <div>World Peace Builder</div>
         </div>
-        <div class="main-content__trending-item">
-          <div class="main-content__trending-user">@morgan</div>
-          <div class="main-content__trending-project">Super Cool Project</div>
+        <div>
+          <div>@morgan</div>
+          <div>Super Cool Project</div>
         </div>
-        <div class="main-content__trending-item">
-          <div class="main-content__trending-user">@kendall</div>
-          <div class="main-content__trending-project">Life Changing App</div>
+        <div>
+          <div>@kendall</div>
+          <div>Life Changing App</div>
         </div>
-        <div class="main-content__trending-item">
-          <div class="main-content__trending-user">@alex</div>
-          <div class="main-content__trending-project">No Traffic Maker</div>
+        <div>
+          <div>@alex</div>
+          <div>No Traffic Maker</div>
         </div>
       </div>
     </div>

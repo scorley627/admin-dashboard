@@ -54,11 +54,11 @@ body {
 }
 
 .sidebar__dash-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .sidebar__nav-link {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .sidebar__dash-title img {
@@ -94,7 +94,7 @@ body {
 }
 
 .header__searchbar input {
-  background-color: lightgray;
+  background-color: #e2e8f0;
   border: none;
   border-radius: 20px;
   padding: 8px 16px;
@@ -132,13 +132,13 @@ body {
 }
 
 .header__greeting-text {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bolder;
   line-height: 1.5;
 }
 
 .header__greeting-name {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-wrap: nowrap;
 }
 
@@ -156,21 +156,21 @@ body {
   height: 38px;
   border: none;
   border-radius: 20px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: bolder;
 }
 
 .main-content {
-  background-color: lightgray;
+  background-color: #e2e8f0;
   padding: 32px 16px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 310px;
-  gap: 16px;
+  grid-template-columns: auto 270px;
+  grid-template-rows: 350px;
+  gap: 24px;
 }
 
 .main-content h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .main-content__projects {
@@ -181,23 +181,20 @@ body {
   margin-top: 8px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  gap: 16px;
+  gap: 24px;
 }
 
-.main-content__project-card {
+.project-card {
   background-color: white;
   padding: 32px 24px;
   border-left: 8px solid orange;
   border-radius: 10px;
   display: grid;
   grid-template-rows: min-content min-content auto;
+  font-size: 0.9rem;
 }
 
-.main-content__project-card {
-  font-size: 0.9em;
-}
-
-.main-content__project-card-icons {
+.project-card__icons {
   margin: 16px 16px 0px;
   display: grid;
   grid-auto-flow: column;
@@ -206,11 +203,30 @@ body {
   gap: 24px;
 }
 
-.main-content__project-card-icons img {
+.project-card__icons img {
   width: 25px;
 }
 
-.main-content__announcements-card,
-.main-content__trending-card {
-  width: 250px;
+.announcements-card,
+.trending-card {
+  background-color: white;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 10px;
+  display: grid;
+  gap: 16px;
+}
+
+.announcements-card hr {
+  border: 1px solid lightgrey;
+}
+
+.announcements-card__entry {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 0.8rem;
+}
+
+.announcements-card__entry h1 {
+  font-size: 0.9rem;
 }
