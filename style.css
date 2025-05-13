@@ -97,7 +97,6 @@ body {
   border: none;
   border-radius: 20px;
   padding: 8px 16px;
-  font-style: inherit;
 }
 
 .header__profile {
@@ -121,9 +120,10 @@ body {
 
 .header__greeting {
   display: grid;
-  grid-template-columns: 70px;
+  grid-template-columns: min-content;
   grid-auto-flow: column;
   align-items: center;
+  column-gap: 16px;
 }
 
 .header__greeting .profile-picture {
@@ -164,18 +164,17 @@ body {
   background-color: #e2e8f0;
   padding: 32px 16px;
   display: grid;
-  grid-template-columns: auto 270px;
-  grid-template-rows: 350px;
+  grid-template-columns: auto 260px;
+  grid-template-rows: 360px;
   gap: 24px;
-}
-
-.main-content h1 {
-  font-size: 1rem;
-  color: black;
 }
 
 .main-content p {
   color: #636363;
+}
+
+.main-content__section-header {
+  font-size: 1.2rem;
 }
 
 .main-content__projects {
@@ -199,6 +198,10 @@ body {
   font-size: 0.9rem;
 }
 
+.project-card h1 {
+  font-size: 1rem;
+}
+
 .project-card__icons {
   margin: 16px 16px 0px;
   display: grid;
@@ -215,7 +218,7 @@ body {
 .announcements-card,
 .trending-card {
   background-color: white;
-  padding: 16px;
+  padding: 24px;
   margin-top: 8px;
   border-radius: 10px;
   display: grid;
@@ -229,11 +232,11 @@ body {
 .announcements-card__entry {
   padding-left: 8px;
   padding-right: 8px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .announcements-card__entry h1 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .trending-card__entry {
