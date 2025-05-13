@@ -230,3 +230,20 @@ body {
 .announcements-card__entry h1 {
   font-size: 0.9rem;
 }
+
+.trending-card__entry {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-auto-flow: column;
+  column-gap: 16px;
+  font-size: 0.9rem;
+}
+
+.trending-card__user {
+  font-weight: bolder;
+}
+
+.trending-card .profile-picture {
+  width: 45px;
+  grid-row: 1 / 3;
+}
